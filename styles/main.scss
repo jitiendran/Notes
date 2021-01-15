@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$primary-color: #1d1d1d;
+$secondary-color: rgb(255,255,0);
+$tertiary-color: #fff;
+$side-color1: rgb(175, 175, 175);
+$input-background: #3d3d3d;
+
+@mixin display($type,$direction) {
+    padding: 1em;
+    display: $type;
+    flex-direction: $direction;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: $primary-color;
+    opacity: 0;
+}
+
+nav{
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-bottom: .5em;
+    @include display(flex,row);
+    .nav-content1{
+        width: 60%;
+        @include display(flex,row);
+        justify-content: space-between;
+        a{
+            color: $tertiary-color;
+            text-decoration: none;
+        }
+    }
+    .nav-content2{
+        width: 40%;
+        @include display(flex,row);
+        justify-content: flex-end;
+        .fa-cog{
+            font-size: 1.1em;
+            color: $side-color1;
+        }
+    }
+}
+main{
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    .search-bar{
+        width: 100%;
+        input[type=text]{
+            background: $input-background;
+            outline: none;
+            padding-left: 1em;
+            border-radius: 1em;
+            color: $side-color1;
+            border: none;
+            width: 100%;
+            font-size: 1.1em;
+            height: 1.6em;
+        }
+    }
+    .add-notes{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.3em;
+        input[type=text]{
+            width: 84%;
+            font-size: 1.2em;
+            border-radius: .3em;
+            padding: .2em;
+            border: none;
+            outline: none;
+        }
+        button{
+            background: $secondary-color;
+            border: none;
+            outline: none;
+            width: 3em;
+            border-radius: .3em;
+            .fa-plus{
+                font-size: 1.5em;
+            }
+        }
+    }
+    .notes-container{
+        padding: .4em;
+        padding-left: 1em;
+        margin-top: 1em;
+        width: 100%;
+        background-color: $tertiary-color;
+        border-radius: .3em;
+    }
+   
+}

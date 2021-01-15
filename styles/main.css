@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: #1d1d1d;
+  opacity: 0;
+}
+
+nav {
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-bottom: .5em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .nav-content1 {
+  width: 60%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-content1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .nav-content2 {
+  width: 40%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .nav-content2 .fa-cog {
+  font-size: 1.1em;
+  color: #afafaf;
+}
+
+main {
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+main .search-bar {
+  width: 100%;
+}
+
+main .search-bar input[type=text] {
+  background: #3d3d3d;
+  outline: none;
+  padding-left: 1em;
+  border-radius: 1em;
+  color: #afafaf;
+  border: none;
+  width: 100%;
+  font-size: 1.1em;
+  height: 1.6em;
+}
+
+main .add-notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.3em;
+}
+
+main .add-notes input[type=text] {
+  width: 84%;
+  font-size: 1.2em;
+  border-radius: .3em;
+  padding: .2em;
+  border: none;
+  outline: none;
+}
+
+main .add-notes button {
+  background: yellow;
+  border: none;
+  outline: none;
+  width: 3em;
+  border-radius: .3em;
+}
+
+main .add-notes button .fa-plus {
+  font-size: 1.5em;
+}
+
+main .notes-container {
+  padding: .4em;
+  padding-left: 1em;
+  margin-top: 1em;
+  width: 100%;
+  background-color: #fff;
+  border-radius: .3em;
+}
+/*# sourceMappingURL=main.css.map */

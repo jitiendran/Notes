@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: #1d1d1d;
+  opacity: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  border-bottom: 1px solid #414141;
+  border-style: thin;
+}
+
+nav .fa-chevron-left {
+  color: #afafaf;
+  font-size: 1.2em;
+}
+
+nav h1 {
+  margin-left: 7em;
+  font-size: 1.16em;
+  color: #fff;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .reset-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+main .reset-container .fa-chevron-right {
+  font-size: 1.2em;
+  color: yellow;
+}
+
+main .update {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+main h3 {
+  color: #afafaf;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+footer {
+  padding: 1em;
+  margin-top: 69vh;
+}
+
+footer p {
+  font-size: 1em;
+  color: #afafaf;
+}
+/*# sourceMappingURL=setting.css.map */
